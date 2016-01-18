@@ -11,3 +11,4 @@ employees = [josh, nizar, ted]
 this_week = Payroll.new(employees)
 
 this_week.pay_employees
+this_week.notify_employee(employees)

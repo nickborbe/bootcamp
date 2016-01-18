@@ -2,23 +2,26 @@ class Game
 	def initialize
 		@rooms = []
 		@current_room = 0
-		# @where_im_at = @rooms[@current_room]
+		@inventory = []
+		
 	end
 
-	def start_game
-		@rooms[@current_room].welcome
-	end
-
-	def change_rooms
+	def play
+		puts @rooms[@current_room].description
+		puts ">"
+		puts @rooms[@current_room].exits.join(" ")
 		user_input = gets.chomp
+		
 		if @rooms[@current_room].exits.include? user_input
 			@current_room += 1
-			start_game
-			change_rooms
+			play
+		elsif 
+		
+
+
 		else
 			puts "there is no exit there"
-			start_game
-			change_rooms
+			play
 		end
 	end
 

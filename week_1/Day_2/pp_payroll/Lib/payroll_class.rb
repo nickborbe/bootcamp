@@ -15,10 +15,12 @@ puts "#{thing.name}: #{thing.calculate_salary}"
 		puts "total payrol is #{(payroll_total * 0.82)} "
 
 	end
-
-	def notify_employee(employee)
-          #email them
-  end
+		def notify_employee(employee)
+			@employees.each do |person|
+				puts "Sent email to #{person.email}"
+			end
+		end
+	
 
 
 

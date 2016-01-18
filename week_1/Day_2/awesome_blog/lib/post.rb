@@ -4,11 +4,15 @@ class Post
 		@date=date
 		@text=text
 	end
-	attr_accessor :title, :date, :text
+	
 
 
 	def display
 
-		puts "#{@title}  \n**************\n#@text}\n----------------"
+		puts "#{@title}"
+		puts "**************"
+		puts "#{@text}"
+		puts "----------------"
+		puts ""
 	end
 end

@@ -3,7 +3,12 @@ class SponsoredPost < Post
 
 	def display
 
-		puts "******#{@title}******  \n**************\n#@text}\n----------------"
+		puts "************#{@title}**************"
+		puts "**************"
+		puts "#{@text}"
+		puts "----------------"
+		puts ""
+
 	end
 
 
