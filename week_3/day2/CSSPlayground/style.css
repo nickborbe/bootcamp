@@ -1,0 +1,44 @@
+h3 {
+	padding: 20%;
+
+}
+
+.box {
+	margin: 10px;
+	float: left;
+}
+
+
+.blue{
+
+	background-color: lightblue;
+	border-style: solid;
+	border-color: red;
+}
+
+.green{
+	background-color: green;
+}
+
+#red{
+	background-color: red;
+	border-style: solid;
+	border-color: blue;
+}
+
+#top {
+	z-index: 1;
+	box-shadow:7px 8px 10px grey;
+	position: absolute;
+	top: 350px;
+	left: 350px;
+
+}
+#bottom{
+	position: absolute;
+	top: 400px;
+	left: 500px;
+
+}
+
+

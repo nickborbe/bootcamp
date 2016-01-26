@@ -1,0 +1,19 @@
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.big-one{
+	background-color: lightgrey;
+}
+
+.smaller-one{
+	background-color: white;
+}
+
+.btn-primary-outline{
+	background-color: transparent;
+	border: 1px solid lightblue;
+	color: lightblue;
+
+}

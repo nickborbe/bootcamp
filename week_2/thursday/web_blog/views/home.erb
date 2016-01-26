@@ -1,6 +1,26 @@
 <h1> Welcome To My Awesome Blog </h1>
 <ul>
 	<% @posts.each_with_index do |post, index| %>
-	<li><a href="/post_details/<%=index +1%>"> <%= post.title%> <%= post.date %> </a> </li>
+	<li><a href="/post_details/<%=index +1%>"> <%= post.date%> <%= post.title %> by <%=post.author %> </a> </li>
 	<% end %>
 </ul>
+<p>
+	<a href="/create_new_post"> Click Here to Create a New Post </a>
+	</p>
+
+	<p>
+	<a href="/create_new_comment"> Click Here to Create a new Comment </a>
+	</p>
+
+	<h3> Comments </h3>
+
+	<div>
+		<ul>
+			<% @comments.each do |comment| %>
+	<li> <%= comment.date%> <%= comment.title %> by <%=comment.author %> <br> <%=comment.text%> </a> </li>
+	<% end %>
+
+			
+
+		</ul>
+	</div>

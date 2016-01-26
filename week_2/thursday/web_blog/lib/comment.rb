@@ -1,4 +1,4 @@
-class Post
+class Comment
 	attr_accessor :title, :date, :text, :author
 	def initialize(title, date, text, author)
 		@title = title
@@ -6,12 +6,4 @@ class Post
 		@text = text
 		@author = author
 	end
-
-
-
-
 end
-
-
-class SponsoredPost < Post
-	end
