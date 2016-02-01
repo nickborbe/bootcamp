@@ -1,0 +1,10 @@
+<h1>Projects index</h1>
+<%@projects.each do |p| %>
+	<ul>
+		<li> 
+			ID is <%=p.id%> Name is <%=p.name%> 
+			Description: <%=p.description%>
+		</li>
+	</ul>
+<%end%>
+
