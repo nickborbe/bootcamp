@@ -1,7 +1,6 @@
 class ProjectsController < ApplicationController
   def index
   	@projects = Project.all
-  	@projects
   
   		render 'index'
   end
@@ -9,15 +8,8 @@ class ProjectsController < ApplicationController
 
 
   def show
-  	the_id = params[:id]
-  	@project = Project.find_by(id: the_id)
-  		if @project
-  		render 'show'
-  	else
-  		render 'no_projects'
-  	end
+        @project = Project.find(params[:id])
+rescue ActiveRecord::RecordNotFound
+    render 'project_not_found'
   end
-
-
-
 end

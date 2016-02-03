@@ -1,6 +1,13 @@
-Project.create name: "Ironhack", description: "Ironhack is a coding bootcamp"
-Project.create name: "Three Non Blondes", description: "I said Hey, What's going on!"
-Project.create name: "Bloc Party", description: "It's so cold in this house!"
+p1 = Project.new name: "Ironhack", description: "Ironhack is a coding bootcamp"
+p2 = Project.new name: "Three Non Blondes", description: "I said Hey, What's going on!"
+p3 = Project.new name: "Bloc Party", description: "It's so cold in this house!"
+p1.save
+p2.save
+p3.save
+p1.entries.create(minutes: 34, hours: 2, date: 1.month.ago)
+p2.entries.create(minutes: 15, hours: 8, date: Date.yesterday)
+p3.entries.create(minutes: 17, hours: 14, date: 2.months.ago)
+
 
 10.times do |i|
 	p = Project.create name: "Project#{i}", description: "This is a description"
