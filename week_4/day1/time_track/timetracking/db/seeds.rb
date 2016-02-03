@@ -2,9 +2,23 @@ Project.create name: "Ironhack", description: "Ironhack is a coding bootcamp"
 Project.create name: "Three Non Blondes", description: "I said Hey, What's going on!"
 Project.create name: "Bloc Party", description: "It's so cold in this house!"
 
-21.times do |name|
-	Project.create name: name, description: "This is a description"
+10.times do |i|
+	p = Project.create name: "Project#{i}", description: "This is a description"
+	if i.odd?
+		p.entries.create(minutes: i, hours: i, date: 1.month.ago)
+	else
+		p.entries.create(minutes: 5 * i, hours: 2 * i, date:1.month.ago)
 	end
+end
+
+
+
+
+
+
+
+
+
 
 
 

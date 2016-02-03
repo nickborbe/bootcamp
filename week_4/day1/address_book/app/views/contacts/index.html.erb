@@ -1,8 +1,17 @@
 <h1> Contacts Index </h1>
-<%@contacts.each do |contact| %>
+<%@sorted_contacts.each do |contact| %>
 	<ul>
 		<li>
-			Name: <%=contact.name%> Address: <%=contact.address%> Phone number: <%=contact.phone_number%> Email: <%=contact.email%>
+			<a href ="/contacts/<%=contact.id%>" > Name: <%=contact.name%> </a>
+				<form action="/contacts/add_favorite" method="POST">
+					<% unless contact.favorite? %>
+				<button name="favorite_contact" value="<%=contact.id%>" type="submit">Add to Favorites</button>
+				<% end %>
+				<input type="hidden" name="authenticity_token"
+      					value="<%= form_authenticity_token %>">
+				</form>
+				
 		</li>
 	</ul>
 	<%end%>
+	<a href="/add_contact">Click here to add a new contact </a>
