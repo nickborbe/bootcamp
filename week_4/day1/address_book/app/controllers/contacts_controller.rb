@@ -5,9 +5,12 @@ class ContactsController < ApplicationController
 		render 'index'
 	end
 
-	def add_contact
-		render 'new'
-	end
+  # def new
+  #   render 'new'
+  # end
+	#it works despite this being commented out because I called it contacts#new in the routes 
+  # so it assumes that this method exists even if I don't say it.  By convention, the URI
+  # shouldn't be /add_contact but instead should be /contacts/new.
 
 	def create
     contact = Contact.new(

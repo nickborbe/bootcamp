@@ -1,0 +1,7 @@
+<h1>Add a Comment for <%=@concert.artist%> in <%=@concert.city%> on <%=@concert.date%> </h1>
+<%= form_for [@concert, @comment] do |f| %>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+   
+  <%= f.submit "Submit Comment" %>
+<% end %>
