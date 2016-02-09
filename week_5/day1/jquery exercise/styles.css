@@ -1,0 +1,13 @@
+.playable {
+  background: #89bdff;
+  padding: 20px;
+  height: 20px;
+  width: 200px;
+  text-align: center;
+  margin: 20px;
+}
+
+.unicorn {
+	border: 4px solid;
+	border-image: url("http://s12.postimg.org/kebji5qfd/border.png") 1 stretch repeat;
+}
