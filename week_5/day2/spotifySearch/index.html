@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/bootsrap.css">
+     <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="col-xs-5">
+    <h1> Spotify Search</h1>
+
+<form method="GET" class="js-search-form">
+  <h4> Search for Artist</h4>
+  
+  <div>
+    <input type="text" class="js-artist-name" placeholder="Artist">
+  </div>
+ 
+    <button>
+      Search
+    </button>
+  </form>
+</div>
+
+
+  <div class="js-results col-xs-3">
+  </div>
+
+
+   <div class="modal fade js-albums-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            <h4 class="js-artist-name modal-title"></h4>
+          </div>
+
+          <div class="modal-body">
+            <ul class="js-albums"></ul>
+          </div>
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+<!--   <ul class="js-albums col-xs-4">
+  </ul> -->
+  
+
+
+  </body>
+</html>
