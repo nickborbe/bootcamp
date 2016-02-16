@@ -1,0 +1,10 @@
+<h3> <%=@sandwich.name%>'s page </h3>
+
+Bread type: <%=@sandwich.bread_type%><br>
+Ingredients: 
+<% @ingredients.each do |ingredient|%>
+	<%=ingredient.name%>
+<%end%>
+<br>
+<br>
+<a href="/sandwiches">Back to Sandwich Index</a>

@@ -1,0 +1,9 @@
+<h1> Look at these Sandwiches! </h1>
+
+	<ul>
+<% @sandwiches.each do |sandwich| %>
+	<li>
+		<%=sandwich.name%>
+	</li>
+<%end%>
+	</ul>
