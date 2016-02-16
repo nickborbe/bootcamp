@@ -32,3 +32,18 @@
 	</ul>
 <%= link_to("Add a New Concert", new_concert_path ) %>
 </div>
+<% unless current_user.nil? %>
+	<a href="users/sign_out" data-method="delete">
+		Log Out
+	</a>
+
+	<%else%>
+	<a href= "/users/sign_in">
+		Log In
+	</a>
+	<br>
+
+	<a href= "users/sign_up">
+		Sign Up
+	</a>
+	<%end%>
