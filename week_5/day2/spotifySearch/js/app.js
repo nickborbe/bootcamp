@@ -22,6 +22,8 @@ function search() {
     }
   });
 }
+console.log("banana")
+console.log(banana === true)
 
 function showArtist(response){
 		var thePic = response.artists.items[0].images.length - 2

@@ -7,10 +7,10 @@ magazine.add_movie Movie.new("The Godfather",5)
 magazine.add_movie Movie.new("Home Alone",7)
 magazine.add_movie Movie.new("titanic",8)
 magazine.add_movie Movie.new("Star Trek",6)
-magazine.add_movie Movie.new("Finding Nemo",10)
-magazine.add_movie Movie.new("True Romance",4)
-magazine.add_movie Movie.new("Point Break",7)
-magazine.add_movie Movie.new("Gladiator",9)
+magazine.add_movie Movie.new("Finding Nemo",8)
+magazine.add_movie Movie.new("True Romance",10)
+magazine.add_movie Movie.new("Point Break",10)
+magazine.add_movie Movie.new("Gladiator",6)
 
 
 

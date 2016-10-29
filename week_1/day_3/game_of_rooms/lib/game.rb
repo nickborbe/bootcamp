@@ -15,9 +15,6 @@ class Game
 		if @rooms[@current_room].exits.include? user_input
 			@current_room += 1
 			play
-		elsif 
-		
-
 
 		else
 			puts "there is no exit there"

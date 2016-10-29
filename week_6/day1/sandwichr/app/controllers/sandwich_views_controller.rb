@@ -11,6 +11,11 @@ class SandwichViewsController < ApplicationController
 		@ingredients = @sandwich.ingredients.all
 	end
 
+	def add_ingredient
+		@sandwich = Sandwich.find_by(id: params[:id])
+		@ingredients = @sandwich.ingredients.all
+		@all_ingredients = Ingredient.all
+	end
 
 
 

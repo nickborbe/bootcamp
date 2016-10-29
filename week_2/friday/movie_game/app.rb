@@ -1,3 +1,4 @@
+require "bundler/setup"
 require "sinatra"
 require "sinatra/reloader" if development?
 require "imdb"
@@ -42,6 +43,20 @@ movie_list = Movies.new
 	movie_list.add_movie(movie)
 	end
 	@random_movie = movie_list.random_movie
+	puts "banana-----------------------------"
+	puts "initial array length is "
+	puts search_array.length
+	puts "trimmed_array length is "
+	puts trimmed_array.length
+	puts "movies with posters length is "
+	puts movies_with_posters.length
+	puts @random_movie
+	puts "movie list length is"
+	puts movie_list.results_array.length
+	puts "heres a poster"
+	puts trimmed_array[0].poster
+	
+
 	
 
 	@array = movie_list.results_array

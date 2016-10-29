@@ -1,0 +1,25 @@
+<h2> <%=@user.name%> </h2>
+
+<% if @products%>
+<div>Items for sale:</div>
+	<ul>
+		<%@products.each do |product| %>
+			
+			<li>
+				Product: <%= link_to product.title, user_product_path(@user.id, product.id)%> 
+				<br><br>
+				Description: <%= product.description%><br><br>
+				Deadline to bid: <%= product.deadline%>
+			</li>
+
+			<br>
+
+		<%end %> 
+	</ul>
+
+	<%else%>
+	<div><%=@user.name%> currently has no products for sale.  
+		Please check back again at a later time.</div>
+<%end%>
+
+<p><%= link_to 'List a new auction for this user', new_user_product_path(@the_id) %> </p>

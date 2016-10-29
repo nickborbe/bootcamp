@@ -2,12 +2,11 @@ $(document).ready(function(){
 	$(".js-show-characters").on("click", function (){
 		fetchCharacters();
 	});
-	$(".js-add-character").on("click", function () {
+	$(".js-add-character").on("click", function (event) {
 		publishCharacter();
 	});
 
 
-});
 
 
 
@@ -53,6 +52,8 @@ function displayCharacters (characters){
 }
 
 function publishCharacter(){
+	event.preventDefault();
+	console.log("banana")
 	var theName = $(".js-char-name").val();
 	var theOccupation = $(".js-char-occupation").val();
 	var theWeapon = $(".js-char-weapon").val();
@@ -93,6 +94,7 @@ function publishCharacter(){
 
 
 
+});
 
 
 

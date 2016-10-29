@@ -1,0 +1,81 @@
+Hello.  Thank you for coming. My name's Nick Borbe. This is my app.  It's called BarCrawler.
+(slide of my face)
+
+quick backstory about me: I'm from Miami. (slide of miami)  
+I went to college in ohio, (slide of denison)
+ I got a dregree in english writing, and (slide of hemingway)
+
+Immediately after graduating, got a job that had nothing to do with writing. (slide of sad office job)
+
+I was a paralegal at a law firm in Oakland, CA.
+Now, something pretty cool did happen while I was there -  the firm started a web app for legal services.  
+ (slide of happy office workers)
+
+I was put in charge of working with the developer we hired and sort of managing the process.
+The guy we hired (slide of south park dev guy)
+ did a great job, but eventually he had to step away from the project and I was supposed to find someone to replace him. 
+So after a long, diligent search, I determined the best candidate for the job was
+(slide of my face)
+ myself and so that's why I decide to apply to Ironhack and become a web developer.
+
+
+As for this app right here (slide of screen shot)
+
+ I came up with this after meeting some friends at a bar not too far from here, and I paid 15 bucks for an Uber and it took like 40 minutes to get there, and then when I got there, everyone was dressed like this(slide of fancy clothes)
+
+  And I was wearing something more like this (swim trunks slide)
+  And this is not the first time this type of thing has happened to me.  
+  And what really irritated me was tyhat my buddy (slide of paynes face with thought bubble saying its casual)
+  had described the place as a super casual beach type of vibe.  
+  So I learned the hard way that you can't always believe what people tell you. (slide of tatoo face)
+
+
+So I had a little existential dilema. (existential slide)
+ If I can't even believe what my buddy tells me,  What can I believe? 
+ The answer? A video.  You can believe a video.  
+
+(pull up app)
+So I made this app so that people can see a live video feed of a bar before they go.  
+You just go to the website - you don't have to sign in or make an account or anyhting - 
+and in the background, you get a video of a bar in your area
+now - I should tell you that these are not actual live video feeds because I haven't installed cameras in bars yet.  These are just stock videos I got from the internet.  But suspend your disbelief and imagine this is an actual live video feed. 
+
+So we got the video in the background and the name of the bar is here at the top
+
+if you don't like what you see, you click this thumbs down button and that one goes away and you get a new one
+and if you do like what you see, you click the thumbs up and it saves that one to your list and shows you another one
+so you can keep browsing.
+After you look through a few you can go back to your list and review your options
+and then you can click the little map button and it shows you where the bar is on the map 
+and you can get directions
+and that's pretty much it - the mission of this app is to get you from
+"i'm not really sure where we should go tonight" to "we're going here, see you there in 18 minutes"
+And I think it does that.  
+
+
+(go back to slides, pull up technologies slide)
+So, these are the big technological crutches I leaned on.
+I built the app on Ruby on Rails.  
+I used bootstrap for the front end. 
+I used a geolocate gem and the google maps api to add the map feature.
+and I used Json and Ajax and I will elaborate on those momentarily.  
+
+So the way this app works is basically like this.  
+ It's not really a typical Rails app in that, as you may have noticed, there is only one page.  Typically Rails apps will send you to a new page for each thing you want to do and Rails will often refresh a page to show the user changes that have been made.  Instead, I did it like this:
+Here you have the computer that the user is looking at.  down here, are the apis that I set up in the backgorund.  I used Json(go back point to Json) to make these apis accessible and basically that means that there are other pages to this app that the user never sees and they're over here.  
+Now, the user clicks a button on the screen and it sends to one of these apis - and I used Ajax to send that message (go back and point to ajax)
+and basically, this page over here, that you never see, receives the message the the user pushed the thumbs up button, and over here, this page will reload with the appropriate changes made, and then send the information back to the user's computer and in that way, I am able to create a seamless user experience that occurs all on one page, without ever redirecting or refreshing the page.
+ 
+
+(pull up future development slide (pic of camera and phones)) 
+
+As for future improvements - first, I need to get actualy real live cameras inside of actual bars so I can show people actual live video feeds instead of random videos I pulled from the internet.  
+
+Second, this is clearly meant to be mobile app. 
+And third, once I have actual cameras in actual bars, then I can have location settings so a user can say, "This is where I am, show me bars withing 5 miles," or, "witihn 1 mile," or, "show me the ten closest bars."
+
+
+And, that's pretty much it.  Thanks for listening.  Here is a cat gif.  (pull up cat gif slide)
+
+
+

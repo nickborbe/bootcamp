@@ -1,0 +1,52 @@
+
+    <h2>Product Details</h2>
+    <h4>This is what's up with this particular product</h4>
+
+    <div> Name: <%=@product.title%> </div>
+
+    <% if @product.description%>
+    <div> Description: <%=@product.description%> </div>
+    <%end%>
+
+    <div>Auction Ends: <%=@product.deadline%> </div>
+
+	<%if @bids.empty? %>
+	<h4>No one has bid on this product yet</h4>
+	    <%else%>
+		<h4>Current Bid</h4>
+		    <h5><%=@highest_bid.amount%></h5>
+    <%end%>
+
+<%if @product.deadline >= DateTime.now.utc %>
+
+<h1> Place Your Bid  </h1>
+<%= form_for [@product, @bid],
+ :url => {:action => "create", :controller => "bids",
+  :product_id =>@product.id} do |f| %>
+
+<%= f.label :email %>
+<%= f.text_field :email %>
+<%= f.label :amount %>
+<%= f.select :amount, (0..1000) %>
+
+
+  <%= f.submit "Submit" %>
+<% end %>
+
+<%else%>
+<p> This auction ended at <%=@product.deadline%> 
+	<br>
+	
+The winner is <%=@winner.name%>
+	
+
+
+</p>
+
+<%end%>
+
+
+
+
+
+    <%= link_to 'Home', users_path %>

@@ -17,16 +17,16 @@ post "/calculate" do
    	
    	if operation_city == "add"
    		result = calc.add(first, second)
-   		"#{first} + #{second} = #{calc.result}"
+   		"#{first} + #{second} = #{result}"
    elsif operation_city == "subtract"
    		result = calc.subtract(first, second)
-   		"#{first} - #{second} = #{calc.result}"
+   		"#{first} - #{second} = #{result}"
    elsif operation_city == "multiply"
    		result = calc.multiply(first, second)
-   		"#{first} * #{second} = #{calc.result}"
+   		"#{first} * #{second} = #{result}"
    	elsif operation_city == "divide"
    		result = calc.divide(first, second)
-   		"#{first} * #{second} = #{calc.result}"
+   		"#{first} * #{second} = #{result}"
 	else 
    end
    		

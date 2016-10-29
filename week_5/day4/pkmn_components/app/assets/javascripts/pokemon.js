@@ -95,7 +95,7 @@ PokemonApp.Pokemon.prototype.getImage = function(id){
 
 		}, 
 		error: function(){
-			alert("something went wrong")
+			alert("something went very wrong")
 		}
 	});
 };

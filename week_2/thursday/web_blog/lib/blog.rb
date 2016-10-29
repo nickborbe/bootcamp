@@ -1,4 +1,4 @@
-require 'colorize'
+
 
 class Blog
 	attr_accessor :posts #:current_page
